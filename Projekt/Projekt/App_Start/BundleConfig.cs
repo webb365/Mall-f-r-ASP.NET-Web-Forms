@@ -12,7 +12,6 @@ namespace Projekt
         {
             bundles.Add(new ScriptBundle("~/bundles/jQuery").Include(
 
-                "~/Scripts/jquery-2.1.3.js",
                 "~/Scripts/jquery-2.1.3.intellisense.js",
                 "~/Scripts/bootstrap.js"
 

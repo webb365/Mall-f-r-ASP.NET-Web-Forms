@@ -49,7 +49,7 @@
         </div>
     </section>
 
-    
+    <script src="Scripts/jquery-2.1.3.min.js"></script>
     <%: Scripts.Render("~/bundles/jQuery")  %>
     <script src="Scripts/error.js"></script>
 </body>

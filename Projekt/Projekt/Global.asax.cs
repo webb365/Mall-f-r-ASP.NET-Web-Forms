@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Optimization;
 using System.Web.Security;
 using System.Web.SessionState;
+using System.Web.UI;
 
 namespace Projekt
 {
@@ -14,6 +15,11 @@ namespace Projekt
         protected void Application_Start(object sender, EventArgs e)
         {
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            ScriptManager.ScriptResourceMapping.AddDefinition("jquery", new ScriptResourceDefinition
+            {
+                Path = "~/Scripts/jquery-2.1.3.min.js",
+
+            });
         }
 
         protected void Session_Start(object sender, EventArgs e)
